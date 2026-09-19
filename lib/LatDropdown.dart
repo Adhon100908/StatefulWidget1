@@ -5,7 +5,7 @@ const List<String> list = <String>[
   'dua',
   'tiga',
   'empat'
-];
+];  
 
 class latdropdown extends StatefulWidget {
   const latdropdown({super.key});
@@ -25,7 +25,7 @@ class _LatDropdownState extends State<latdropdown> {
       ),
       body: Center(
         child: DropdownMenu<String>(
-          initialSelection: list.first,
+          initialSelection: list.first, 
           onSelected: (String? value) {
             setState(() {
               dropdownValue = value!;

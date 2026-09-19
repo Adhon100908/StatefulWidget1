@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'LatChekbox.dart';
-import 'LatDropdown.dart';
-import 'LatFloatingAction.dart';
-import 'LatIconButton.dart';
-import 'LatRadio.dart';
-import 'LatSlider.dart';
-import 'LatSwitch.dart';
-import 'LatTextButton.dart';
-import 'LatTextField.dart';
+import 'package:lat_stateful/LATWIDGET.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -25,8 +19,7 @@ class MyApp extends StatelessWidget {
         // This is the theme of your application.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Scaffold(
-        body: TextFieldExample(),
+      home: const LATWIDGET(
       ),
     );
   }
